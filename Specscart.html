@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Specscart</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/section1.css">
+    <link rel="stylesheet" href="styles/slider.css">
+</head>
+<style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+  </style>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="left-top">
+                <span>Free Returns </span>
+                <span>|</span>
+                <span>Try at Home</span>
+                <span>|</span>
+                <span>24 Hrs Dispatch</span>
+            </div><span style="color:#7a5c87">
+            <div class="left-bottom">
+                <span>Glasses </span>
+                <span>Sunglasses</span>
+                <span>Eye-Test</span>
+                <span>Blogs</span>
+            </div></span>
+        </div>
+        <div class="middle-section">
+            <img src="Images/specscart-logo.png" alt="Logo">
+        </div>
+        <div class="right-section">
+            <div class="right-top">
+                <span>+91 9657597880</span>
+                <span>|</span>
+                <span>Help</span>
+                <span>|</span>
+                <span>Login</span>
+            </div>
+            <div class="right-bottom">
+                <img src="Images/search.png" alt="">
+                <img src="Images/profile.png" alt="">
+                <img src="Images/heart.png" alt="">
+                <img src="Images/home.png" alt="">
+                <img src="Images/Cart.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="left-part">
+            <span style='color:#26b3a3' class="home-trial-text">Home Trial Cart 2.0</span>
+            <div class="cart-text">
+                <span class="title">It's an Experience!</span><br>
+                <span class="cart-text1">Four Frames.</span>
+                <span class="cart-text2">Three Lenses.</span>
+                <span class="cart-text3">1Laser</span>
+                <div class="button-section">
+                    <button class="try-now-button">Try Now</button>
+                    <div style="display: flex; align-items: center;">
+                        <button style='color: #d0d5d4;' class="watch-button">▶</button><span
+                            style="color: #26b3a3; font-size: 18px; font-weight: 700;">Watch What's
+                            New!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="animation">
+                <img class="book" src="Images/book-with-glasses.png" alt="">
+                <img class="laser" src="Images/laser.png" alt="">
+                <img class="plates" src="Images/three-plates.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <span class="description-title">
+            4 Frames, 3 lenses, 7 days - direct to your home.
+        </span> <br><br>
+        <p class="green md font_16 bold font_16 bold text-center mt-3 row align-items-center justify-content-center special-btns"><span style='color:#26b3a3'>We get it - sometimes you need to hold the glasses in your hand (or take a selfie wearing them) to know if they're made for you</span><br>
+            <span style='color:#26b3a3'>or not. With our Free Home Trial, get 4 frames of your choice at your home, along with 3 cool lenses.</span></p>    </div>
+    <div class="carousel">
+        Carousel
+    </div>
+
+    <div>
+        <main>
+            <div class="container">
+                <div class="image-container">
+                    <img class="image-before slider-image" src="Images/blurImage.jpg" alt="color photo" />
+                    <img class="image-after slider-image" src="Images/normalImage.jpg" alt="black and white" />
+                </div>
+                <!-- step="10" -->
+                <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+                    class="slider" />
+                <div class="slider-line" aria-hidden="true"></div>
+                <div class="slider-button" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></polyline>
+                        <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                    </svg>
+                    
+                </div>
+                
+            </div>
+            <span class="description-title">
+                No Reflections = no glare = <span style='color:#26b3a3'>happy Eyes!!</span>        
+            </span>
+        </main>
+    </div>
+
+</body>
+
+<script>
+    const container = document.querySelector('.container');
+    document.querySelector('.slider').addEventListener('input', (e) => {
+        container.style.setProperty('--position', `${e.target.value}%`);
+    })
+</script>
+
+</html>
